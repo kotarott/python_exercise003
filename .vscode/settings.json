@@ -1,0 +1,6 @@
+{
+    "search.useGlobalIgnoreFiles": true,
+    "emmet.includeLanguages": {
+        "django-html": "html",
+    },
+}
