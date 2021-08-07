@@ -16,6 +16,12 @@
         function js_function(values) {
             return "ok test"
         }
+        eel.python_function("okokokok")
+        async function run() {
+            let val = await eel.python_function2()();
+            console.log(val)
+        }
+        run()
     </script>
 </body>
 </html>
