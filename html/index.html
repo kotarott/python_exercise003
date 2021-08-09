@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Python_exercise003</title>
+</head>
+<body>
+    <h1>Exercise003</h1>
+    <label for="keyword">検索ワード：</label><br>
+    <input type="text" name="keyword" id="keyword">
+    <input type="button" value="検索" id="search">
+    <div>
+        <label for="results">検索結果：</label><br>
+        <textarea name="results" id="results" cols="30" rows="20"></textarea>
+    </div>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../eel.js"></script>
+    <script type="text/javascript">
+        $("#search").on("click", function() {
+            const keyword = $("#keyword").val()
+            if (!keyword) {
+                alert("検索ワードを入力してください。")
+                return false
+            }
+        })
+    </script>
+</body>
+</html>
