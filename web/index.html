@@ -39,10 +39,8 @@
 
         eel.expose(add_results)
         function add_results(result) {
-            console.log(result)
-            let texts = $("#results").val() + "\n"
-            texts = texts + result
-            $("#results").val(texts)
+            console.log(result);
+            results.value += result + "\n";
         }
 
     </script>
